@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f6f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+}
+
+main {
+  position: relative;
+  width: 400px;
+  max-width: 100%;
+  min-height: 500px;
+}
+
+h1,
+h3 {
+  font-size: 600;
+}
+
+.form-header {
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  height: 200px;
+  line-height: 1.4;
+  border-radius: 10px 10px 0 0;
+}
+
+.form-container1 .form-header {
+  background: linear-gradient(to right, #ca3f3f, #f57272);
+}
+
+.form-container2 .form-header {
+  background: linear-gradient(to right, #ca663f, #f5a272);
+}
+
+.form-container1,
+.form-container2 {
+  background-color: #ffffff;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.25),
+    0 0.8rem 1.6rem rgba(0, 0, 0, 0.22);
+  position: absolute;
+  top: 0;
+  height: 500px;
+  transition: all 1s ease-in-out;
+  border-radius: 10px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 0.7rem;
+}
+
+.form-body {
+  background: #fff;
+  box-shadow: 0 0.1rem 0.1rem #ccc, 0 0.1rem 0.1rem #ccc;
+  margin: 0 2rem;
+  margin-top: -80px;
+  padding: 1rem 0;
+}
+
+.btn {
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  margin: 0.5rem auto;
+  display: block;
+  outline: none;
+}
+
+.form-container1 .btn {
+  border: 1px solid #f57272;
+  background-color: #f57272;
+}
+
+.form-container2 .btn {
+  border: 1px solid #f5a272;
+  background-color: #f5a272;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-clear {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  display: block;
+  padding-top: 0.5rem;
+  margin: auto;
+}
+
+input {
+  background-color: #fff;
+  border: 1px solid #cecdcd;
+  padding: 0.9rem 0.7rem;
+  margin: 0.5rem 0;
+  width: 80%;
+  border-radius: 8px;
+  outline: none;
+}
+.sign-up {
+  z-index: 2;
+}
+
+.sign-in {
+  z-index: 1;
+}
+
+.active {
+  transform: rotate(360deg);
+}
+
+.inactive {
+  transform: rotate(360deg);
+  z-index: 1;
+}
+
+.social-login {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.social-login i {
+  border-radius: 100%;
+  color: #bdbdbd;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid#bdbdbd;
+  margin-right: 0.3rem;
+}
+
+.form-container1 b {
+  color: #ca3f3f;
+}
+
+.form-container2 b {
+  color: #ca663f;
+}
